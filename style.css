@@ -1,19 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+html{
+    font-family: "Quicksand", sans-serif;
+    font-size: 12px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px;
+    border-style: solid;
+    background: radial-gradient(#280a48, #20043d);
+    outline: solid;
+}
+
 img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-html{
-    font-family: 'Nunito';
-    font-size: 12px;
 }
 
 section{
@@ -36,8 +54,13 @@ section{
 
 .name{
     text-align: center;
+    font-size: 3rem;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 4rem;
-    color: black;
+    background: radial-gradient(#280a48, #20043d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
     margin-bottom: 30px;
 }
 
@@ -47,13 +70,14 @@ form{
     margin: 20px auto;
     background-color: rgb(223,223,223);
     border-radius: 4px;
+    outline: solid;
 }
 
 input{
     width: 90%;
     background-color: transparent;
     padding: 10px;
-    border: none;
+    border: 2px;
     outline: none;
     font-size: 2rem;
     display: inline-block;
@@ -78,7 +102,7 @@ form ion-icon{
 .item{
     width: 100%;
     border-radius: 8px;
-    background-color: rgb(37,37,37);
+    background: radial-gradient(#280a48, #20043d);
     padding: 15px;
     overflow: hidden;
 }
@@ -99,7 +123,7 @@ form ion-icon{
     color: whitesmoke;
     margin: 20px 10px 0 0;
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .view-button{
@@ -109,16 +133,22 @@ form ion-icon{
     padding: 10px 0;
     background-color: #404041;
     color: whitesmoke;
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-top: 20px;
     align-self: flex-start;
+    border-radius: 10px;
+}
+
+.view-button:hover {
+    background: #03d5ff;
+    transition: 0.4s;
 }
 
 .item-data{
     color: whitesmoke;
     display: block;
     margin-top: 10px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     letter-spacing: 0.05rem;
     line-height: 2 rem;
 }
@@ -160,7 +190,7 @@ form ion-icon{
 
 #loadMoreButton {
     float: right;
-    background-color: #4caf50;
+    background: radial-gradient(#280a48, #20043d);
     color: white;
     padding: 10px 20px;
     border: none;
